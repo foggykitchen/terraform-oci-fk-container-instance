@@ -1,0 +1,23 @@
+output "container_instance_id" {
+  value = module.container_instance.container_instance_id
+}
+
+output "container_private_ip" {
+  value = module.container_instance.primary_private_ip
+}
+
+output "load_balancer_public_ips" {
+  value = module.load_balancer.load_balancer_public_ips
+}
+
+output "reserved_public_ip" {
+  value = module.public_ip.ip_address
+}
+
+output "backend_set_name" {
+  value = module.load_balancer.backend_set_name
+}
+
+output "vcn_id" {
+  value = module.vcn.vcn_id
+}
