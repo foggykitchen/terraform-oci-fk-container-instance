@@ -1,5 +1,5 @@
 module "load_balancer" {
-  source = "git::https://github.com/foggykitchen/terraform-oci-fk-loadbalancer.git"
+  source = "git::https://github.com/foggykitchen/terraform-oci-fk-loadbalancer.git?ref=v1.0.0"
 
   compartment_ocid      = var.compartment_ocid
   name                  = "fk-ci-public-lb"
